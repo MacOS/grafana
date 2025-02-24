@@ -21,6 +21,9 @@ jobs:
 
             - name: 'Sync our fork with Upstream from Grafang'
               run: |
+                git config --global user.name 'Stefan Bachhofner'
+                git config --global user.email 'stefan.bachhofner@magenta.at'
+
                 git remote add upstream https://github.com/grafana/grafana
                 git fetch --tags upstream
 
