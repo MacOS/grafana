@@ -21,6 +21,7 @@ jobs:
               with:
                 fetch-tags: true
                 fetch-depth: 0
+                token: ${{ secrets.WORKFLOW_TOKEN }}
 
             - name: 'Sync our fork with Upstream from Grafang'
               run: |
